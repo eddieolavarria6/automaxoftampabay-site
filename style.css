@@ -1,0 +1,56 @@
+*{box-sizing:border-box}
+body{margin:0;font-family:"Open Sans",Roboto,Arial,sans-serif;color:#000;background:#e00600}
+a{color:inherit}
+.infobar{background:#f0ff00;color:#222;font-size:13px;padding:10px 20px;text-align:right}
+.infobar a{text-decoration:none;margin-left:16px}
+.nav{background:rgba(0,0,0,.75);display:flex;justify-content:flex-end;flex-wrap:wrap;padding:0 8px}
+.nav a{color:#fff;text-decoration:none;text-transform:uppercase;font:600 13.6px "Open Sans",sans-serif;padding:15px 14px}
+.nav a.active,.nav a:hover{background:#f0ff00;color:#222}
+.hero{display:block;width:100%;height:auto;background:#f0ff00}
+.inner .hero{height:250px;object-fit:cover;object-position:center 45%}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr)}
+.tile{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:180px;color:#fff;text-decoration:none;text-align:center;background-size:cover;background-position:center;overflow:hidden}
+.tile::before{content:"";position:absolute;inset:0;background:var(--c);opacity:.8}
+.tile h4,.tile span{position:relative}
+.tile h4{margin:0;font-size:32px;font-weight:600;text-transform:uppercase}
+.tile span{margin-top:8px;font-size:13px;letter-spacing:1px;text-transform:uppercase}
+.t1{background-image:url(https://automaxtampabay.com/themes/theme1/img/invcar1.jpg);--c:#d3231a}
+.t2{background-image:url(https://automaxtampabay.com/themes/theme1/img/invcar2.jpg);--c:#1f4fb4}
+.t3{background-image:url(https://automaxtampabay.com/themes/theme1/img/apply.jpg);--c:#5fc43a}
+.styles{background:#fff;display:grid;grid-template-columns:repeat(6,1fr);gap:10px;padding:30px 20px;text-align:center}
+.styles a{text-decoration:none;color:#222;font:400 16px Roboto,sans-serif}
+.styles img{width:100%;max-width:200px;height:auto;display:block;margin:0 auto 14px}
+.welcome{background:radial-gradient(circle,rgba(0,0,0,.5),rgba(0,0,0,.9)),url(https://automaxtampabay.com/themes/theme1/bg/speedometer.jpg) center/cover;color:#fff;padding:40px 20px}
+.wrap{max-width:1180px;margin:0 auto}
+.welcome .wrap{display:grid;grid-template-columns:1fr 1.7fr;gap:40px}
+.welcome h2{font-size:32px;font-weight:700;margin:0 0 16px}
+.welcome h4{margin:16px 0 8px;font-size:14px}
+.welcome p{text-align:justify;line-height:1.7;font-size:14px;margin:0 0 12px}
+.makes{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;align-content:start}
+.makes a{background:#fff;color:#222;text-decoration:none;text-align:center;padding:10px 4px;font:400 18px Roboto,sans-serif}
+.makes a:hover{background:#f0ff00}
+.title{background:#333;color:#fff;text-align:center;padding:36px 20px}
+.title h2{margin:0;font-size:32px;font-weight:600;text-transform:uppercase}
+.page{background:#fff;padding:30px 20px}
+.page .wrap{display:grid;grid-template-columns:2fr 1fr;gap:40px}
+.page h3{border-left:3px solid #f0ff00;padding-left:14px;font-weight:400;font-size:22px;margin:0 0 16px}
+.page h4{margin:18px 0 6px;font-size:14px}
+.page p{line-height:1.6;font-size:14px;text-align:justify;margin:0 0 12px}
+.side h5{font-size:18px;font-weight:400;margin:22px 0 8px}
+.side h5:first-child{margin-top:0}
+.side p{font-size:13px;margin:0;line-height:1.7;text-align:left}
+.side a.dir{color:#e00600}
+.note{font-style:italic;font-size:13px;font-weight:600;margin:0 0 6px}
+form label{display:block;font-size:12px;margin:14px 0 4px}
+form input,form textarea{width:100%;padding:12px;background:#f4f4f4;border:1px solid #ddd;font:inherit}
+form button{margin-top:16px;background:#f0ff00;border:0;padding:12px 22px;font:600 14px "Open Sans",sans-serif;cursor:pointer}
+footer{background:#1c1c1c url(https://automaxtampabay.com/themes/theme1/img/world_map.png) no-repeat left bottom;color:#aaa;padding:40px 20px;font:14px Roboto,sans-serif}
+.fwrap{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:1fr 2.4fr;gap:30px}
+footer img{max-width:240px;width:100%;height:auto}
+footer h3{color:#fff;font-weight:400;font-size:22px;margin:0 0 12px}
+.flinks{display:flex;flex-wrap:wrap;gap:6px 18px;margin-bottom:24px}
+footer a{color:#aaa;text-decoration:none}
+footer a:hover{color:#fff}
+footer p{margin:12px 0;line-height:1.6}
+.text-us{position:fixed;right:0;top:38%;background:#f39c12;color:#fff;writing-mode:vertical-rl;transform:rotate(180deg);padding:14px 8px;text-decoration:none;font:600 14px "Open Sans",sans-serif;border-radius:0 8px 8px 0;z-index:5}
+@media(max-width:900px){.tiles,.welcome .wrap,.page .wrap,.fwrap{grid-template-columns:1fr}.styles{grid-template-columns:repeat(3,1fr)}.makes{grid-template-columns:repeat(2,1fr)}.nav{justify-content:center}.infobar{text-align:center}}
